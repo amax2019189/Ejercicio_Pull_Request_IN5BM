@@ -30,18 +30,16 @@
 
 /** ============================================================================
     EJERCICIO 15: SISTEMA DE VENTAS DE BOLETOS
+    
+    Implementación de los conceptos de Herencia y Polimorfismo.
  
-    OBJETIVO: Aplicar los conceptos de Herencia y Polimorfismo.
-
-    EXPLICACIÓN DEL FLUJO:
-    1. Creamos un arreglo utilizando como tipo la clase base abstracta 'Boleto'.
-    2. Gracias al Polimorfismo, podemos almacenar dentro de este mismo arreglo 
-       cualquiera de las tres clases hijas (General, VIP y Estudiante).
-    3. Recorremos el arreglo con un método '.forEach' para imprimir los datos. 
-       Cada objeto ejecuta de forma automática sus propias operaciones matemáticas 
-       de descuentos o cargos sin necesidad de usar condicionales 'if' complejos.
-
-    Trabajado por: José Angel Coy Mucía - 2025161
+    ¿Cómo funciona el código?
+    1. Creamos un arreglo general usando como tipo la clase abstracta 'Boleto'.
+    2. Aplicando polimorfismo, guardamos los tres tipos de boletos (General, VIP y Estudiante) en la misma lista.
+    3. Recorremos el arreglo con un '.forEach' para mostrar todo en la consola. Cada objeto 
+       ejecuta sus propios métodos de precio y descuento automáticamente.
+ 
+    Hecho por: José Angel Coy Mucía - 2025161
     ============================================================================ */
 
 import { Boleto } from
@@ -57,26 +55,24 @@ console.log("==================================================");
 console.log("        SISTEMA DE VENTAS DE BOLETOS              ");
 console.log("==================================================\n");
 
-// Polimorfismo con el arreglo de la clase base Boleto
 const listaBoletos: Boleto[] = [
 
-    // --- Ejemplos de Boleto General ---
+    // Ejemplos de Boleto General 
     new BoletoGeneral(101, "Concierto Rock Fest", 250),
     new BoletoGeneral(102, "Partido de Fútbol Local", 100),
     new BoletoGeneral(103, "Obra de Teatro Clásica", 150),
 
-    // --- Ejemplos de Boleto VIP ---
+    // Ejemplos de Boleto VIP 
     new BoletoVIP(201, "Festival Electrónico", 600, 150), // precio base + Q150 de cargo por servicio
     new BoletoVIP(202, "Conferencia de Tecnología", 450, 75),  // precio base + Q75 de cargo por servicio
     new BoletoVIP(203, "Concierto Rock Fest", 500, 120), // precio base + Q120 de cargo por servicio
 
-    // --- Ejemplos de Boleto Estudiante ---
+    // Ejemplos de Boleto Estudiante
     new BoletoEstudiante(301, "Visita Guiada al Museo", 50, 0.80), // 80% de descuento
     new BoletoEstudiante(302, "Torneo de Ajedrez Escolar", 60, 0.25), // 25% de descuento
     new BoletoEstudiante(303, "Feria de Ciencias", 80, 0.50) // 50% de descuento
 ];
 
-// Recorrer el arreglo para imprimir los resultados en consola
 listaBoletos.forEach(boleto => {
     boleto.mostrarInformacion();
     console.log("--------------------------------------------------");
