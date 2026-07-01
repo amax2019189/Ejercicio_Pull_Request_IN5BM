@@ -1,4 +1,9 @@
 /*
+    | Ejercicio: 01 nomina |
+
+    autor: Marcos Eriberto Santos Ramirez
+*/
+/*
     | Ejercicios de Clase |
 
     1. Sistema de nómina empresarial
@@ -27,3 +32,35 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+import { Empleado } from "./ejercicios/ejercicio-01-nomina/Empleado";
+import { EmpleadoFijo } from "./ejercicios/ejercicio-01-nomina/EmpleadoFijo";
+import { EmpleadoHora } from "./ejercicios/ejercicio-01-nomina/EmpleadoHora";
+import { EmpleadoComision } from "./ejercicios/ejercicio-01-nomina/EmpleadoComision";
+
+const empleados: Empleado[] = [
+            new EmpleadoFijo(),
+            new EmpleadoHora(),
+            new EmpleadoComision()
+        ];
+
+        let totalPlanilla = 0;
+
+console.log("========== PLANILLA DE EMPLEADOS ==========\n");
+
+empleados.forEach((empleado, index) => {
+    console.log("Empleado " + (index + 1) + ":");
+    console.log("--------------------------------");
+
+    empleado.mostrarInformacion();
+
+    const pago = empleado.calcularPago();
+    totalPlanilla += pago;
+
+    console.log("Pago final: Q" + pago);
+    console.log("--------------------------------\n");
+});
+
+console.log("===========================================");
+console.log("Total de la planilla: Q" + totalPlanilla);
+console.log("===========================================");
