@@ -21,7 +21,7 @@
     18. Sistema de seguros
     19. Sistema de transporte público
     20. Sistema de mantenimiento técnico
-    21. Sistema de facturación
+    21. Sistema de generación de facturas
     22. Sistema de clínicas médicas
     23. Sistema de gimnasio
     24. Sistema de delivery
@@ -31,4 +31,20 @@
 /*
 Ejercicio 16-AndreYoj-2022242
 */
-import { Ticket } from "./Ticket";
+
+import { Prestamo } from "./ejercicios/ejercicio-16-prestamos/Prestamo";
+import { PrestamoPersonal } from "./ejercicios/ejercicio-16-prestamos/PrestamoPersonal";
+import { PrestamoVehiculo } from "./ejercicios/ejercicio-16-prestamos/PrestamoVehiculo";
+import { PrestamoHipotecario } from "./ejercicios/ejercicio-16-prestamos/PrestamoHipotecario";
+
+const listaPrestamos: Prestamo[] = [
+    new PrestamoPersonal("Carlos Garcia", 10000, 12),
+    new PrestamoVehiculo("Ana Lopez", 45000, 36),
+    new PrestamoHipotecario("Luis Martinez", 150000, 60)
+];
+
+console.log("=== SISTEMA DE PRESTAMOS BANCARIOS ===");
+
+listaPrestamos.forEach(prestamo => {
+    prestamo.mostrarInformacion();
+});
