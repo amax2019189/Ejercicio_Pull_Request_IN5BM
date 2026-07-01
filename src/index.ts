@@ -27,3 +27,5 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/*Ejercicio 2: Sistema de pagos con validaciones(Angel Esteban Garcia Jimenez 2025261)*/
