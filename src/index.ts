@@ -6,7 +6,7 @@
     3. Gestión de vehiculos en venta
     4. Inventario con productos especializados
     5. Sistema de notificaciones multicanal
-    6. Plataforma de cursos online
+    6. Plataforma de cursos online - Sebastian Santiago 2025522
     7. Sistema bancario
     8. Videojuego RPG
     9. Sistema de reportes empresariales
