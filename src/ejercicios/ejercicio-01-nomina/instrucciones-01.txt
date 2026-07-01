@@ -1,0 +1,23 @@
+| Sistema de nómina empresarial |
+
+    Debe desarrollar un sistema para calcular el pago de empleados.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Empleado
+
+    Clases Hijas
+        - Empleado fijo
+        - Empleado por hora
+        - Empleado por comisión
+
+    Métodos obligatorios
+        - calcularPago(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - calcularBonificacion(): number
+        - calcularDescuento(): number
+    
+    Cada tipo calcula su salario de manera diferente.
+    Al finalizar mostrar el total de la planilla.

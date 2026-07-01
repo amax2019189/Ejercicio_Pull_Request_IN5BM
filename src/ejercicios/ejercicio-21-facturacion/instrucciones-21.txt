@@ -1,0 +1,23 @@
+| Sistema de facturación |
+
+    Debe desarrollar un sistema de facturación.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Factura
+
+    Clases Hijas
+        - FacturaConsumidorFinal
+        - FacturaCreditoFiscal
+        - FacturaExportacion
+
+    Métodos obligatorios
+        - calcularSubtotal(): number
+        - calcularImpuesto(): number
+        - calcularTotal(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - generarFactura(): string
+
+    Cada factura calcula el total aplicando IVA, descuentos o exenciones según corresponda.

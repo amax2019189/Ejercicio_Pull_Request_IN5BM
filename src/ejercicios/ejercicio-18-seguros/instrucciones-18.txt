@@ -1,0 +1,22 @@
+| Sistema de seguros |
+
+    Debe desarrollar un sistema de seguros.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Seguro
+
+    Clases Hijas
+        - SeguroVida
+        - SeguroVehiculo
+        - SeguroMedico
+
+    Métodos obligatorios
+        - calcularPrima(): number
+        - calcularCobertura(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarCliente(): boolean
+
+    Cada seguro calcula el valor de la prima según sus propias reglas.

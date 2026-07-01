@@ -1,0 +1,20 @@
+| Plataforma de cursos online |
+
+    Debe desarrollar una plataforma de cursos en linea.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Curso
+
+    Clases Hijas
+        - CursoGratis
+        - CursoPremium
+        - CursoEmpresarial
+
+    Métodos obligatorios
+        - calcularPrecioFinal(): number
+        - generarCertificado(): void
+        - mostrarBeneficios(): void
+        - mostrarInformacion(): void
+    
+    Cada curso debe calcular su costo y mostrar los beneficios incluidos.

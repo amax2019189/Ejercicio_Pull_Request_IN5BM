@@ -1,0 +1,22 @@
+| Sistema de inscripción estudiantil |
+
+    Debe desarrollar un sistema de inscripción estudiantil.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Inscripcion
+
+    Clases Hijas
+        - InscripcionNuevoIngreso
+        - InscripcionReingreso
+        - InscripcionBecado
+
+    Métodos obligatorios
+        - calcularPago(): number
+        - aplicarDescuento(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarDocumentos(): boolean
+
+    Cada tipo de inscripción calcula el pago correspondiente aplicando descuentos cuando sea necesario.

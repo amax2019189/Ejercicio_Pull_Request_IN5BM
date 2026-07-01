@@ -1,0 +1,22 @@
+| Sistema de restaurantes |
+
+    Debe desarrollar un sistema de restaurantes.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Pedido
+
+    Clases Hijas
+        - PedidoMesa
+        - PedidoParaLlevar
+        - PedidoDelivery
+
+    Métodos obligatorios
+        - calcularTotal(): number
+        - calcularRecargo(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - agregarProducto(nombre: string, precio: number): void
+
+    Cada pedido calcula el total considerando propinas, empaque o envío.

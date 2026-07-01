@@ -1,0 +1,22 @@
+| Sistema de notificaciones multicanal |
+
+    Debe desarrollar un sistema para notificaciones multicanales.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Notificacion
+
+    Clases Hijas
+        - Email
+        - SMS
+        - WhatsApp
+
+    Métodos obligatorios
+        - validarDestinatario(): boolean
+        - enviar(mensaje: string): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - formatearMensaje(mensaje: string): string
+    
+    Cada una debe enviar el mensaje de manera distinta.

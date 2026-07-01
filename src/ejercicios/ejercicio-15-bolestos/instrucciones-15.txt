@@ -1,0 +1,22 @@
+| Sistema de ventas de boletos |
+
+    Debe desarrollar un sistema de ventas de boletos.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Boleto
+
+    Clases Hijas
+        - BoletoGeneral
+        - BoletoVIP
+        - BoletoEstudiante
+
+    Métodos obligatorios
+        - calcularPrecioFinal(): number
+        - aplicarDescuento(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarAcceso(): boolean
+    
+    Cada boleto calcula el precio final aplicando descuentos o cargos adicionales.

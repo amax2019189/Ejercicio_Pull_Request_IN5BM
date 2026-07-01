@@ -1,0 +1,23 @@
+| Sistema de biblioteca |
+
+    Debe desarrollar un sistema de biblioteca.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - MaterialBiblioteca
+
+    Clases Hijas
+        - Libro
+        - Revista
+        - DVD
+
+    Métodos obligatorios
+        - calcularMulta(): number
+        - prestar(): void
+        - devolver(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - estaDisponible(): boolean
+    
+    Cada material calcula la multa por atraso.

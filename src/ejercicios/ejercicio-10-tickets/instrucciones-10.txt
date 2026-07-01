@@ -1,0 +1,22 @@
+| Sistema de tickets para visitas empresariales |
+
+    Debe desarrollar un sistema de tickets para visitas empresariales.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Ticket
+
+    Clases Hijas
+        - TicketReclutamiento
+        - TicketRRHH
+        - TicketPoligrafia
+
+    Métodos obligatorios
+        - procesarFlujo(): void
+        - cerrarTicket(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - cambiarEstado(nuevoEstado: string): void
+    
+    Cada ticket debe mostrar un flujo distinto.

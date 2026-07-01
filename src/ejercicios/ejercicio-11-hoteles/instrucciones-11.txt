@@ -1,0 +1,22 @@
+| Sistema de reservas de hoteles |
+
+    Debe desarrollar un sistema de reservas de hoteles.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Habitacion
+
+    Clases Hijas
+        - HabitacionSimple
+        - HabitacionDoble
+        - Suite
+
+    Métodos obligatorios
+        - calcularCostoReserva(): number
+        - aplicarServicioExtra(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - mostrarInformacion(): void
+    
+    Cada habitación debe calcular el costo de la reserva según la cantidad de noches.

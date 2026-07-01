@@ -1,0 +1,23 @@
+| Inventario con productos especializados |
+
+    Debe desarrollar un sistema para inventario de productos.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Producto
+
+    Clases Hijas
+        - Producto nacional
+        - Producto importado
+        - Producto perecedero
+
+    Métodos obligatorios
+        - calcularPrecioFinal(): number
+        - actualizarStock(cantidad: number): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - aplicarDescuento(): number
+    
+    Cada producto debe calcular su precio final.
+    Mostrar el inventario completo.

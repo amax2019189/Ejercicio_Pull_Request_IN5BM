@@ -1,0 +1,22 @@
+| Sistema de gimnasio |
+
+    Debe desarrollar un sistema de gimnasio.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Membresia
+
+    Clases Hijas
+        - MembresiaBasica
+        - MembresiaPremium
+        - MembresiaFamiliar
+
+    Métodos obligatorios
+        - calcularPagoMensual(): number
+        - mostrarBeneficios(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - aplicarDescuento(): number
+
+    Cada membresía calcula el pago mensual y muestra los beneficios incluidos.

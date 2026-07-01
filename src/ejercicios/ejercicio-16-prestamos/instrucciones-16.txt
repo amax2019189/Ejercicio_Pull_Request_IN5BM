@@ -1,0 +1,22 @@
+| Sistema de préstamos bancarios |
+
+    Debe desarrollar un sistema de préstamos bancarios.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Prestamo
+
+    Clases Hijas
+        - PrestamoPersonal
+        - PrestamoVehiculo
+        - PrestamoHipotecario
+
+    Métodos obligatorios
+        - calcularCuotaMensual(): number
+        - calcularInteresTotal(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarMonto(): boolean
+    
+    Cada préstamo calcula la cuota mensual según monto, interés y plazo.

@@ -1,0 +1,23 @@
+| Sistema de transporte público |
+
+    Debe desarrollar un sistema de transporte público.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Transporte
+
+    Clases Hijas
+        - Bus
+        - Taxi
+        - Metro
+
+    Métodos obligatorios
+        - calcularTarifa(): number
+        - iniciarViaje(): void
+        - finalizarViaje(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - calcularTiempoEstimado(): number
+
+    Cada transporte calcula el costo del viaje utilizando una lógica diferente.

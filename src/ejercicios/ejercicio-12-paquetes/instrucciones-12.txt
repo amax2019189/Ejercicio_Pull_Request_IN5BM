@@ -1,0 +1,22 @@
+| Sistema de envíos de paquetes |
+
+    Debe desarrollar un sistema de envíos de paquetes.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Envio
+
+    Clases Hijas
+        - EnvioLocal
+        - EnvioNacional
+        - EnvioInternacional
+
+    Métodos obligatorios
+        - calcularCostoEnvio(): number
+        - calcularSeguro(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarPeso(): boolean
+    
+    Cada envío calcula su costo utilizando peso y distancia.

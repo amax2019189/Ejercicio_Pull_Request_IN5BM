@@ -1,0 +1,23 @@
+| Sistema bancario |
+
+    Debe desarrollar un sistema bancario.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - CuentaBancaria
+
+    Clases Hijas
+        - CuentaAhorro
+        - CuentaCorriente
+        - CuentaEmpresarial
+
+    Métodos obligatorios
+        - depositar(monto: number): void
+        - retirar(monto: number): void
+        - calcularInteres(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - consultarSaldo(): number
+    
+    Cada cuenta calcula intereses y permite depósitos y retiros.

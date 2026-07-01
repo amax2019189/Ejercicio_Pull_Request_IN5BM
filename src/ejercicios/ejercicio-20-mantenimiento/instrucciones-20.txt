@@ -1,0 +1,20 @@
+| Sistema de mantenimiento técnico |
+
+    Debe desarrollar un sistema de mantenimiento técnico.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - ServicioTecnico
+
+    Clases Hijas
+        - MantenimientoComputadora
+        - MantenimientoImpresora
+        - MantenimientoRed
+
+    Métodos obligatorios
+        - calcularCosto(): number
+        - diagnosticar(): void
+        - generarReporte(): void
+        - mostrarInformacion(): void
+
+    Cada servicio calcula el costo del mantenimiento según el tipo de trabajo realizado.

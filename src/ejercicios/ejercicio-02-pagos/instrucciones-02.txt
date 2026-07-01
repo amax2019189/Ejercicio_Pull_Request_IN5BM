@@ -1,0 +1,20 @@
+| Sistema de pagos con validaciones |
+
+    Debe desarrollar un sistema para validar pagos.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - MetodoPago
+
+    Clases Hijas
+        - Tarjeta
+        - Transferencia
+        - Efectivo
+
+    Métodos obligatorios
+        - validarPago(): boolean
+        - procesarPago(): void
+        - generarComprobante(): string
+        - mostrarInformacion(): void
+    
+    Cada una debe validar el pago de forma distinta y mostrar un comprobante.

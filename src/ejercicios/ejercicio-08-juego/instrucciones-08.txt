@@ -1,0 +1,23 @@
+| Videojuego RPG |
+
+    Debe desarrollar un videojuego RPG.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Personaje
+
+    Clases Hijas
+        - Guerrero
+        - Mago
+        - Arquero
+
+    Métodos obligatorios
+        - atacar(): number
+        - recibirDanio(danio: number): void
+        - usarHabilidadEspecial(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - estaVivo(): boolean
+    
+    Cada personaje debe atacar de forma diferente y mostrar el daño causado.

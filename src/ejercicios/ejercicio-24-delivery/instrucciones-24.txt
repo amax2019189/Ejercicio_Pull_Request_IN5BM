@@ -1,0 +1,22 @@
+| Sistema de delivery |
+
+    Debe desarrollar un sistema de gimnasio.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Entrega
+
+    Clases Hijas
+        - EntregaMoto
+        - EntregaBicicleta
+        - EntregaExpress
+
+    Métodos obligatorios
+        - calcularCostoEntrega(): number
+        - calcularTiempoEstimado(): number
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarDistancia(): boolean
+
+    Cada entrega calcula el costo según la distancia y el tipo de servicio.

@@ -1,0 +1,22 @@
+| Sistema de reportes empresariales |
+
+    Debe desarrollar un sistema de reportes empresariales.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - Reporte
+
+    Clases Hijas
+        - ReportePDF
+        - ReporteExcel
+        - ReporteHTML
+
+    Métodos obligatorios
+        - generar(): void
+        - exportar(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - validarDatos(): boolean
+    
+    Cada una genera un reporte diferente.

@@ -1,0 +1,22 @@
+| Sistema de clínicas médicas |
+
+    Debe desarrollar un sistema de clínicas médicas.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - ConsultaMedica
+
+    Clases Hijas
+        - ConsultaGeneral
+        - ConsultaEspecialista
+        - ConsultaEmergencia
+
+    Métodos obligatorios
+        - calcularCosto(): number
+        - generarDiagnostico(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - asignarDoctor(nombre: string): void
+
+    Cada consulta calcula el costo final de atención.

@@ -1,0 +1,23 @@
+| Sistema de parqueo |
+
+    Debe desarrollar un sistema de parqueo.
+    Minimo son 3 atributos para la clase Padre.
+
+    Clase Padre
+        - VehiculoParqueo
+
+    Clases Hijas
+        - CarroParqueo
+        - MotoParqueo
+        - CamionParqueo
+
+    Métodos obligatorios
+        - calcularPago(): number
+        - registrarEntrada(): void
+        - registrarSalida(): void
+        - mostrarInformacion(): void
+
+    Métodos extra sugeridos
+        - calcularHorasParqueo(): number
+    
+    Cada vehículo calcula el pago según las horas estacionadas.
