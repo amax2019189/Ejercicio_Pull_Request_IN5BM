@@ -27,3 +27,6 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+
+//Ejercicio 24 - David Estuardo Lcayo Morataya - 2024330
