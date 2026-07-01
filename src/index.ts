@@ -30,3 +30,16 @@
 
 
 //Ejercicio 24 - David Estuardo Lcayo Morataya - 2024330
+
+import { EntregaMoto } from "./EntregaMoto";
+import { EntregaBicicleta } from "./EntregaBicicleta";
+import { EntregaExpress } from "./EntregaExpress";
+
+const pedido1 = new EntregaMoto(8, 3, "Zona 10, Ciudad de Guatemala");
+const pedido2 = new EntregaBicicleta(4, 1, "Zona 1, Ciudad de Guatemala");
+const pedido3 = new EntregaExpress(12, 2, "Zona 15, Ciudad de Guatemala");
+
+[pedido1, pedido2, pedido3].forEach((p) => {
+  p.mostrarInformacion();
+  console.log();
+});
