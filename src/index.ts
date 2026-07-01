@@ -28,6 +28,13 @@
     25. Sistema de inscripción estudiantil
 */
 
+/*
+ejercicio 7 - xavier lara
+
+sistema bancario
+
+*/
+
 import { CuentaBancaria } from "./ejercicios/ejercicio-07-banco/cuentaBancaria";
 import { CuentaAhorro } from "./ejercicios/ejercicio-07-banco/cuentaAhorro";
 import { CuentaCorriente } from "./ejercicios/ejercicio-07-banco/cuentaCorriente";
