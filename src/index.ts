@@ -27,3 +27,24 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+import { CuentaBancaria } from "./ejercicios/ejercicio-07-banco/cuentaBancaria";
+import { CuentaAhorro } from "./ejercicios/ejercicio-07-banco/cuentaAhorro";
+import { CuentaCorriente } from "./ejercicios/ejercicio-07-banco/cuentaCorriente";
+import { CuentaEmpresarial } from "./ejercicios/ejercicio-07-banco/cuentaEmpresarial";
+
+const cuentas: CuentaBancaria[] = [
+    new CuentaAhorro("Juan", 1001, 5000),
+    new CuentaCorriente("María", 1002, 3000),
+    new CuentaEmpresarial("Empresa ABC", 1003, 10000)
+];
+
+cuentas.forEach(cuenta => {
+    cuenta.depositar(500);
+    cuenta.retirar(200);
+
+    cuenta.mostrarInformacion();
+
+    console.log(`Interés generado: Q${cuenta.calcularInteres()}`);
+    console.log("--------------------------------");
+});
