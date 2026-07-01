@@ -1,3 +1,4 @@
+
 /*
     | Ejercicios de Clase |
 
@@ -27,3 +28,12 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/*
+    | Ejercicio: 01 nomina |
+
+    autor: Marcos Eriberto Santos Ramirez
+*/
+import { ejecutar } from "./ejercicios/ejercicio-01-nomina/Menu";
+
+ejecutar();
