@@ -1,12 +1,17 @@
 export abstract class Curso {
     constructor(
+        public nombre: string,
+        public instructor: string,
+        public precio: number
+    ) {}
 
-        nombre: string;
-        informacion: string;
-        precio: number;
-    ) {
-        this.nombre = nombre;
-        this.informacion = informacion;
-        this.precio = precio;
+    abstract calcularPrecioFinal(): number;
+    abstract generarCertificado(): void;
+    abstract mostrarBeneficios(): void;
+
+    mostrarInformacion(): void {
+        console.log("Curso: " + this.nombre);
+        console.log("Instructor: " + this.instructor);
+        console.log("Precio base: Q" + this.precio);
     }
 }

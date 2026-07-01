@@ -1,3 +1,4 @@
+
 /*
     | Ejercicios de Clase |
 
@@ -27,3 +28,21 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+import { Curso } from "./ejercicios/ejercicio-06-plataforma/Curso";
+import { CursoGratis } from "./ejercicios/ejercicio-06-plataforma/CursoGratis";
+import { CursoPremium } from "./ejercicios/ejercicio-06-plataforma/CursoPremium";
+import { CursoEmpresarial } from "./ejercicios/ejercicio-06-plataforma/CursoEmpresarial";
+
+const cursos: Curso[] = [
+    new CursoGratis("Java POO", "Hansel Gutierrez", 0),
+    new CursoPremium("Python", "Eross Duarte", 300),
+    new CursoEmpresarial("PostgreSQL", "Mario Roberto", 800)
+];
+
+cursos.forEach(curso => {
+    curso.mostrarInformacion();
+    console.log("Precio final: Q" + curso.calcularPrecioFinal());
+    curso.mostrarBeneficios();
+    curso.generarCertificado();
+    console.log();
+});
