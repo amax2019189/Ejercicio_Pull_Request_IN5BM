@@ -1,11 +1,22 @@
-export class Boleto {
-    numeroDeBoleto: number;
-    precio: number;
-    asientos: number;
+// Clase Padre Abstracta 
+export abstract class Boleto {
+    codigo: number;
+    nombreEvento: string;
+    precioBase: number;
 
-    constructor(precio: number, asientos: number) {
-        this.numeroDeBoleto = Math.floor(Math.random() * 1000000);
-        this.precio = precio;
-        this.asientos = asientos;
+    constructor(codigo: number, nombreEvento: string, precioBase: number) {
+        this.codigo = codigo;
+        this.nombreEvento = nombreEvento;
+        this.precioBase = precioBase;
+    }
+
+    // Métodos obligatorios 
+    abstract aplicarDescuento(): number;
+    abstract calcularPrecioFinal(): number;
+
+    mostrarInformacion(): void {
+        console.log(`Boleto Código: ${this.codigo}
+            | Evento: ${this.nombreEvento} 
+            | Precio Base: Q${this.precioBase}`);
     }
 }
