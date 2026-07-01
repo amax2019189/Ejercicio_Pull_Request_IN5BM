@@ -27,3 +27,5 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// Ejercicio No. 23 - Juan Boj
