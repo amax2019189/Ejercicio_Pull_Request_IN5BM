@@ -27,3 +27,7 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// EjercicioNo.17-jramos - Sistema de Restaurantes
+import { ejecutarEjercicio17 } from "./ejercicios/ejercicio-17-restaurante/index";
+ejecutarEjercicio17();
