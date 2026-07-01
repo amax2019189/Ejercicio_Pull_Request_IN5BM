@@ -27,3 +27,8 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/*
+Ejercicio 16-AndreYoj-2022242
+*/
+import { Ticket } from "./Ticket";
