@@ -27,3 +27,23 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// Ejercicio 05
+import { Notificacion } from "./ejercicios/ejercicio-05-notificaciones/Notificacion";
+import { Email } from "./ejercicios/ejercicio-05-notificaciones/Email";
+import { SMS } from "./ejercicios/ejercicio-05-notificaciones/SMS";
+import { WhatsApp } from "./ejercicios/ejercicio-05-notificaciones/WhatsApp";
+
+const notificaciones: Notificacion[] = [
+  new Email("juan@gmail.com", "Sistema", new Date()),
+  new SMS("5512345678", "Banco", new Date()),
+  new WhatsApp("+50255551234", "Soporte", new Date()),
+];
+
+console.log("\nEJERCICIO 05-SISTEMA DE NOTIFICACIONEs");
+
+notificaciones.forEach((notificacion) => {
+  notificacion.mostrarInformacion();
+  notificacion.enviar("Su operación fue realizada correctamente.");
+  console.log("-----------------------------------------");
+});

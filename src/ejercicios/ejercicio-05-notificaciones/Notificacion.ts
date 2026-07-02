@@ -1,21 +1,21 @@
 //Sistema de notificaciones multicanal
 export abstract class Notificacion {
-    destinatario: string;
-    mensaje: string;
-    fechaEnvio: Date;
+  constructor(
+    public destinatario: string,
+    public remitente: string,
+    public fechaEnvio: Date
+  ) {}
 
-    constructor(destinatario: string, mensaje: string) {
-        this.destinatario = destinatario;
-        this.mensaje = mensaje;
-        this.fechaEnvio = new Date();
-    }
+  abstract validarDestinatario(): boolean;
+  abstract enviar(mensaje: string): void;
 
-    abstract validarDestinatario(): boolean;
-    abstract enviar(mensaje: string): void;
-    abstract mostrarInformacion(): void;
+  mostrarInformacion(): void {
+    console.log(`Remitente: ${this.remitente}`);
+    console.log(`Destinatario: ${this.destinatario}`);
+    console.log(`Fecha: ${this.fechaEnvio.toLocaleString()}`);
+  }
 
-    formatearMensaje(mensaje: string): string {
-        const texto = mensaje.trim();
-        return texto.charAt(0).toUpperCase() + texto.slice(1);
-    }
+  protected formatearMensaje(mensaje: string): string {
+    return `[${this.fechaEnvio.toLocaleTimeString()}] ${mensaje}`;
+  }
 }
