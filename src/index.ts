@@ -27,3 +27,20 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+//ejercicio 21 - Alexander Noh
+
+import { Factura } from "./ejercicios/ejercicio-21-facturacion/model/Factura";
+import { FacturaCreditoFiscal } from "./ejercicios/ejercicio-21-facturacion/service/FacturaCreditoFiscal";
+import { FacturaExportacion } from "./ejercicios/ejercicio-21-facturacion/service/FacturaExportacion";
+import { FacturaConsumidorFinal } from "./ejercicios/ejercicio-21-facturacion/service/FacturaConsumidorFinal";
+
+const facturas: Factura[] = [
+    new FacturaCreditoFiscal(1, new Date(), "Juan Boj"),
+    new FacturaExportacion(2, new Date(), "Angel Aquino"),
+    new FacturaConsumidorFinal(3, new Date(), "Angel Garcia")
+];
+
+facturas.forEach((factura) => {
+    factura.mostrarInformacion();
+});
