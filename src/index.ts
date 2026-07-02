@@ -27,3 +27,24 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// Ejercicio 20: - Sistema de mantenimiento técnico -
+// Autor: Kenneth Xavier Caneda Trujillo - 2025086
+// Objetivo: Aplicar las características de la herencia y polimorfismo para aplicar una misma base de una clase padre a diferentes tipos de mantenimiento técnico, como mantenimiento de computadoras, impresoras y redes.
+import {MantenimientoComputadora} from "./ejercicios/ejercicio-20-mantenimiento/MantenimientoComputadora";
+import {MantenimientoImpresora} from "./ejercicios/ejercicio-20-mantenimiento/MantenimientoImpresora";
+import {MantenimientoRed} from "./ejercicios/ejercicio-20-mantenimiento/MantenimientoRed";
+
+const mantenimientoComputadora = new MantenimientoComputadora("Juan", "Pérez", "Dell", "No enciende", 100, 50, "Problema de fuente de poder");
+const mantenimientoImpresora = new MantenimientoImpresora("María", "Gómez", "HP", "Atasco de papel", 80, 30, "Problema de rodillos");
+const mantenimientoRed = new MantenimientoRed("Carlos", "Ramírez", "Cisco", "No hay conexión a internet", 120, 40, "Problema de configuración");
+
+//Computadora
+mantenimientoComputadora.mostrarInformacion();
+mantenimientoComputadora.generarReporte();
+//Impresora    
+mantenimientoImpresora.mostrarInformacion();
+mantenimientoImpresora.generarReporte();
+//Red
+mantenimientoRed.mostrarInformacion();
+mantenimientoRed.generarReporte();
