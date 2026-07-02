@@ -1,18 +1,24 @@
 export abstract class ServicioTecnico {
-    problema:string;
-    costoServicio:number;
-    costoComponentes:number;
-    comentario:string;
+    protected nombreCliente:string;
+    protected apellidoCliente:string;
+    protected marcaEquipo:string;
+    protected problema:string;
+    protected costoServicio:number;
+    protected costoComponentes:number;
+    protected diagnostico:string;
 
-    constructor(problema:string, costoServicio:number, costoComponentes:number, comentario:string){
+    constructor(nombreCliente:string, apellidoCliente:string, marcaEquipo:string, problema:string, costoServicio:number, costoComponentes:number, diagnostico:string){
+        this.nombreCliente=nombreCliente;
+        this.apellidoCliente=apellidoCliente;
+        this.marcaEquipo=marcaEquipo;
         this.problema=problema;
         this.costoServicio=costoServicio;
         this.costoComponentes=costoComponentes;
-        this.comentario=comentario;
+        this.diagnostico=diagnostico;
     };
 
-    abstract calcularCosto():number;
-    abstract diagnosticar():void;
+    abstract calcularCosto(costoComponentes: number):number;
+    abstract diagnosticar(problema: string, diagnostico: string):void;
     abstract generarReporte():void;
     abstract mostrarInformacion():void;
 }
