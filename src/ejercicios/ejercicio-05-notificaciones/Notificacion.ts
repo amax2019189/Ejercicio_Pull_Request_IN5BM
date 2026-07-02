@@ -1,4 +1,4 @@
-//Sistema de notificaciones multicanal
+//Sistema de notificaciones
 export abstract class Notificacion {
   constructor(
     public destinatario: string,
