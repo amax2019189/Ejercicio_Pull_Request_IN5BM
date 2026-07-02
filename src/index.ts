@@ -19,6 +19,7 @@
     16. Sistema de préstamos bancarios
     17. Sistema de restaurantes
     18. Sistema de seguros
+    
     19. Sistema de transporte público
     20. Sistema de mantenimiento técnico
     21. Sistema de facturación
@@ -27,3 +28,38 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+//18.sistema de seguros-Adryan Gomez 2025164 
+import { SeguroVida } from "./seguroVida";
+import { SeguroVehiculo } from "./SeguroVehiculo.ts";
+import { SeguroMedico } from "./SeguroVida.ts";
+
+const seguroVida = new SeguroVida(
+    "Carlos López",
+    55,
+    100000
+);
+
+const seguroVehiculo = new SeguroVehiculo(
+    "María Pérez",
+    30,
+    80000,
+    2012
+);
+
+const seguroMedico = new SeguroMedico(
+    "Juan García",
+    40,
+    50000,
+    true
+);
+
+seguroVida.mostrarInformacion();
+
+console.log("----------------------------");
+
+seguroVehiculo.mostrarInformacion();
+
+console.log("----------------------------");
+
+seguroMedico.mostrarInformacion();
