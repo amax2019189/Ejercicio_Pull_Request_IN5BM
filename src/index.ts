@@ -27,3 +27,23 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// Ejercicio No. 23 - Juan Boj
+
+
+import { Menu } from "./ejercicios/ejercicio-23-gym/Menu";
+import { MembresiaBasica } from "./ejercicios/ejercicio-23-gym/service/MembresiaBasica";
+import { MembresiaFamiliar } from "./ejercicios/ejercicio-23-gym/service/MembresiaFamiliar";
+import { MembresiaPremium } from "./ejercicios/ejercicio-23-gym/service/MembresiaPremium";
+
+const miMenu = new Menu();
+
+const clienteUno = new MembresiaBasica("Sujeto Alfa", 30, true);
+const clienteDos = new MembresiaPremium("Sujeto Beta", 30, true);
+const clienteTres = new MembresiaFamiliar("Familia Gamma", 30, true, 8);
+
+miMenu.registrarMembresia(clienteUno);
+miMenu.registrarMembresia(clienteDos);
+miMenu.registrarMembresia(clienteTres);
+
+miMenu.mostrarClientes();
