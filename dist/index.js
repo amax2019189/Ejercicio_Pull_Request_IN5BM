@@ -1,3 +1,4 @@
+"use strict";
 /*
     | Ejercicios de Clase |
 
@@ -27,11 +28,9 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
-
+Object.defineProperty(exports, "__esModule", { value: true });
 /*Ejercicio 8: Videojuego RPG
   Por Eros Duarte
 */
-
-import { iniciarMenu } from "./ejercicios/ejercicio-08-juego/Menu";
-
-iniciarMenu();
+const Menu_1 = require("./ejercicios/ejercicio-08-juego/Menu");
+(0, Menu_1.iniciarMenu)();
