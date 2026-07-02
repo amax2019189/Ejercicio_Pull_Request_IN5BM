@@ -27,3 +27,27 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/* 
+Ejercicio No. 14: Sistema de Parqueo
+Humberto Alessandro Pérez González
+*/
+
+import { vehichuloParqueo } from "./ejercicios/ejercicio-14-parqueo/vehiculoParqueo";
+import { carroParqueo } from "./ejercicios/ejercicio-14-parqueo/carroParqueo";
+import { motoParqueo } from "./ejercicios/ejercicio-14-parqueo/motoParqueo";
+import { camionParqueo } from "./ejercicios/ejercicio-14-parqueo/camionParqueo";
+
+const vehiculos: vehichuloParqueo[] = [
+    new carroParqueo("P123ABC", "Aless", 5),
+    new motoParqueo("M578DEF", "Lucia", 3),
+    new camionParqueo("C789GHI", "Carlos", 6)
+];
+
+vehiculos.forEach(vehiculo => {
+    console.log("----------------------------")
+    vehiculo.registrarEntrada();
+    vehiculo.mostrarInformacion();
+    console.log(`Total a Pagar: Q${vehiculo.calcularPago()}`);
+    vehiculo.registrarSalida();
+});
