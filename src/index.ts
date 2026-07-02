@@ -27,3 +27,14 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/**
+ * ==================================================
+ * Ejercicio 11: Sistema de reservas de hoteles
+ * Autor: Carlos Emilio Barahona Pasán 2025075
+ * ==================================================
+ */
+
+import { Menu } from "./ejercicios/ejercicio-11-hoteles/Menu";
+
+Menu.iniciar();
