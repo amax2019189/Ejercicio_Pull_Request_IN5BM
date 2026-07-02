@@ -27,3 +27,39 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+/*
+   ======================================
+    Ejercicio 13 - Sistema de Biblioteca
+    Kevin Morales - 2025027
+   ======================================
+*/
+
+import { Libro } from "./ejercicios/ejercicio-13-biblioteca/Libro";
+import { Revista } from "./ejercicios/ejercicio-13-biblioteca/Revista";
+import { DVD } from "./ejercicios/ejercicio-13-biblioteca/DVD";
+
+const libro = new Libro(1, "Viaje Destructivo", "Aventura");
+
+libro.prestar();
+libro.devolver(new Date("2026-08-27T12:00:00Z"));
+libro.mostrarInformacion();
+
+const revista = new Revista(
+    2, "Detective Comics", "Suspenso", 
+    false, new Date("2026-06-12T12:00:00Z")
+);
+
+revista.prestar(); // Error
+revista.devolver();
+revista.mostrarInformacion();
+
+const dvd = new DVD(
+    3, "Madagascar", "Comedia", 
+    true, new Date("2026-06-05T12:00:00Z"),
+    new Date("2026-07-01T12:00:00Z")
+);
+
+dvd.devolver(); // Error
+dvd.mostrarInformacion();
+console.log("Multa DVD: Q." + dvd.calcularMulta().toFixed(2));
